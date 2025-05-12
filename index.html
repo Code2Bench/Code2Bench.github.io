@@ -109,6 +109,12 @@
       <label class="btn btn-outline-primary" for="TypeScript">TypeScript</label>
       <input type="radio" class="btn-check" name="btnradio" id="JavaScript" />
       <label class="btn btn-outline-primary" for="JavaScript">JavaScript</label>
+      <input type="radio" class="btn-check" name="btnradio" id="weakly" />
+      <label class="btn btn-outline-primary" for="weakly">weakly</label>
+      <input type="radio" class="btn-check" name="btnradio" id="humaneval" />
+      <label class="btn btn-outline-primary" for="humaneval">humaneval</label>
+      <input type="radio" class="btn-check" name="btnradio" id="humaneval+" />
+      <label class="btn btn-outline-primary" for="humaneval+">humaneval+</label>
       <input type="radio" class="btn-check" name="btnradio" id="Average" />
       <label class="btn btn-outline-primary" for="Average">Average</label>
     </div>
@@ -229,6 +235,9 @@
           data[key]["pass@1"]["Go"],
           data[key]["pass@1"]["TypeScript"],
           data[key]["pass@1"]["JavaScript"],
+          data[key]["pass@1"]["weakly"],
+          data[key]["pass@1"]["humaneval"],
+          data[key]["pass@1"]["humaneval+"]
         );
       });
       data = Object.keys(data).map((key) => {
@@ -508,12 +517,36 @@
     const goRadio = document.getElementById("Go");
     const typeScriptRadio = document.getElementById("TypeScript");
     const javaScriptnRadio = document.getElementById("JavaScript");
+    const weaklynRadio = document.getElementById("weakly");
+    const humanevalnRadio = document.getElementById("humaneval");
+    const humanevalpnRadio = document.getElementById("humaneval+");
 
     javaScriptnRadio.addEventListener("click", function () {
       clearTable();
       displayTable(plusedTable, "JavaScript");
       clearChart();
       displayChart("JavaScript");
+    });
+
+    weaklynRadio.addEventListener("click", function () {
+      clearTable();
+      displayTable(plusedTable, "weakly");
+      clearChart();
+      displayChart("weakly");
+    });
+
+    humanevalnRadio.addEventListener("click", function () {
+      clearTable();
+      displayTable(plusedTable, "humaneval");
+      clearChart();
+      displayChart("humaneval");
+    });
+
+    humanevalpnRadio.addEventListener("click", function () {
+      clearTable();
+      displayTable(plusedTable, "humaneval+");
+      clearChart();
+      displayChart("humaneval+");
     });
 
     typeScriptRadio.addEventListener("click", function () {
