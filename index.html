@@ -200,12 +200,12 @@
     const chartDom = document.getElementById("chart");
     var chart = echarts.init(chartDom);
 
-    const calcAverage = (a, b) => {
-      if (a == null || b == null) {
-        return null;
-      } else {
-        return parseFloat(((parseFloat(a) + parseFloat(b)) / 2).toFixed(1));
+    const calcAverage = (list) => {
+      let sum = 0.0;
+      for(let item of list) {
+        sum += parseFloat(item);
       }
+      return parseFloat((sum / list.length).toFixed(1));
     };
 
     var data;
@@ -230,14 +230,14 @@
       data = JSON.parse(xhr.responseText);
       Object.keys(data).forEach((key) => {
         data[key]["pass@1"]["average"] = calcAverage(
-          data[key]["pass@1"]["Python"],
+          [data[key]["pass@1"]["Python"],
           data[key]["pass@1"]["Java"],
           data[key]["pass@1"]["Go"],
           data[key]["pass@1"]["TypeScript"],
           data[key]["pass@1"]["JavaScript"],
           data[key]["pass@1"]["weakly"],
           data[key]["pass@1"]["humaneval"],
-          data[key]["pass@1"]["humaneval+"]
+          data[key]["pass@1"]["humaneval+"]]
         );
       });
       data = Object.keys(data).map((key) => {
