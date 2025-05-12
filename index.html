@@ -91,7 +91,7 @@
   <div id="content" class="container-fluid d-flex flex-column align-items-center gap-3">
     <h1 class="text-nowrap mt-5">🏆 Code2Bench Leaderboard 🏆</h1>
     <h3 class="fw-light text-nowrap">
-      <small id="warning">intro to be completed.<br /></small>
+      <small id="warning">Dynamic Benchmark Construction for Evaluating Large Language Models on Real-World Codes<br /></small>
     </h3>
     <div class="d-flex flex-row justify-content-center gap-3">
       <a href="https://github.com/22373448/github-page-test"><img
@@ -132,14 +132,20 @@
       <div class="inline-block mt-3">
         <ol>
           <li>
-            To be completed.
+            We present the experimental setup employed to evaluate the performance of state-of-the-art large language models (LLMs) on the CODE2BENCH-2505 dataset.
+          </li>
+          <li>
+            For code completion generation, we adopted greedy decoding (temperature = 0) for Pass@1 evaluation, following standard practice in deterministic code generation tasks as established in prior studies.
+          </li>
+          <li>
+            Open-source models with fewer than 32 billion parameters were hosted and served locally using vLLM for efficient inference, while larger open-source models and proprietary models were accessed via their respective official APIs.
           </li>
         </ol>
       </div>
     </div>
-    <div id="notes">
+    <!-- <div id="notes">
       <h3>🤗 More Leaderboards</h3>
-      <p>do we need this?</p>
+      <p>do we need this?</p> -->
       <!-- In addition to EvalPlus leaderboards, it is recommended to
       comprehensively understand LLM coding ability through a diverse set of
       benchmarks and leaderboards, such as:
@@ -191,7 +197,7 @@
           </li>
         </ol>
       </div> -->
-    </div>
+    <!-- </div> -->
   </div>
 
   <script>
