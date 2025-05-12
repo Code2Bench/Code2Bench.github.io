@@ -94,7 +94,7 @@
       <small id="warning">Dynamic Benchmark Construction for Evaluating Large Language Models on Real-World Codes<br /></small>
     </h3>
     <div class="d-flex flex-row justify-content-center gap-3">
-      <a href="https://github.com/22373448/github-page-test"><img
+      <a href="https://github.com/Code2Bench/Code2Bench.github.io"><img
           src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
           alt="github" class="img-fluid" /></a>
     </div>
@@ -143,61 +143,6 @@
         </ol>
       </div>
     </div>
-    <!-- <div id="notes">
-      <h3>🤗 More Leaderboards</h3>
-      <p>do we need this?</p> -->
-      <!-- In addition to EvalPlus leaderboards, it is recommended to
-      comprehensively understand LLM coding ability through a diverse set of
-      benchmarks and leaderboards, such as:
-      <div class="inline-block mt-3">
-        <ol>
-          <li>
-            <a href="https://bigcode-bench.github.io/">BigCodeBench</a>
-          </li>
-          <li>
-            <a href="https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard">Big Code Models Leaderboard</a>
-          </li>
-          <li>
-            <a href="https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard">Chatbot Arena Leaderboard</a>
-          </li>
-          <li>
-            <a href="https://github.com/amazon-science/cceval">CrossCodeEval</a>
-          </li>
-          <li>
-            <a href="https://fudanselab-classeval.github.io/">ClassEval</a>
-          </li>
-          <li>
-            <a href="https://crux-eval.github.io/leaderboard.html">CRUXEval</a>
-          </li>
-          <li>
-            <a href="https://codetlingua.github.io/leaderboard.html">Code Lingua</a>
-          </li>
-          <li><a href="https://evo-eval.github.io/">Evo-Eval</a></li>
-          <li><a href="https://huggingface.co/spaces/EffiBench/effibench-leaderboard">EffiBench</a></li>
-          <li>
-            <a href="https://github.com/01-ai/HumanEval.jl">HumanEval.jl - Julia version HumanEval with EvalPlus test
-              cases</a>
-          </li>
-          <li>
-            <a href="https://livecodebench.github.io/leaderboard.html">LiveCodeBench</a>
-          </li>
-          <li>
-            <a href="https://sparksofagi.github.io/MHPP/">MHPP</a>
-          </li>
-          <li>
-            <a href="https://github.com/THUDM/NaturalCodeBench">NaturalCodeBench</a>
-          </li>
-          <li><a href="https://github.com/Leolty/repobench">RepoBench</a></li>
-          <li><a href="https://www.swebench.com/">SWE-bench</a></li>
-          <li>
-            <a href="https://leaderboard.tabbyml.com/">TabbyML Leaderboard</a>
-          </li>
-          <li>
-            <a href="https://llm4softwaretesting.github.io/">TestEval</a>
-          </li>
-        </ol>
-      </div> -->
-    <!-- </div> -->
   </div>
 
   <script>
@@ -414,8 +359,8 @@
           modelCell.textContent = "";
         }
         rank++;
-        var modelLink = document.createElement("a");
-        modelLink.href = row["link"];
+        var modelLink = document.createElement("span");
+        // modelLink.href = row["link"];
         modelLink.textContent = row["Model"];
         modelLink.classList.add("link-underline-primary");
         modelLink.classList.add("text-nowrap");
@@ -425,7 +370,6 @@
         dataRow.appendChild(modelCell);
         var passCell = document.createElement("td");
         if (table == plusedTable) {
-          passCell.textContent = "⚡";
           passCell.classList.add("text-success");
         }
         passCell.textContent += row["pass@1"][score];
