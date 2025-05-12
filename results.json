@@ -81,7 +81,7 @@
             "humaneval": 92.7,
             "humaneval+": 86.6
         },
-        "size": 0
+        "size": 37
     },
     "qwen3-235b-a22b": {
         "link": "",
@@ -165,7 +165,7 @@
             "humaneval": 91.5,
             "humaneval+": 86.6
         },
-        "size": 0
+        "size": 45
     },
     "qwen2.5-coder-14b-instruct": {
         "link": "",
@@ -221,6 +221,6 @@
             "humaneval": 93.3,
             "humaneval+": 86.6
         },
-        "size": 0
+        "size": 60
     }
 }
