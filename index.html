@@ -89,9 +89,9 @@
 
 <body>
   <div id="content" class="container-fluid d-flex flex-column align-items-center gap-3">
-    <h1 class="text-nowrap mt-5">🏆 Code2Bench Leaderboard 🏆</h1>
+    <h1 class="text-nowrap mt-5">🏆 Code2Bench-2505 benchmark 🏆</h1>
     <h3 class="fw-light text-nowrap">
-      <small id="warning">Dynamic Benchmark Construction for Evaluating Large Language Models on Real-World Codes<br /></small>
+      <small id="warning">Code2Bench：Dynamic Benchmark Construction for Evaluating Large Language Models on Real-World Codes<br /></small>
     </h3>
     <div class="d-flex flex-row justify-content-center gap-3">
       <a href="https://github.com/Code2Bench/Code2Bench.github.io"><img
@@ -111,10 +111,6 @@
       <label class="btn btn-outline-primary" for="JavaScript">JavaScript</label>
       <input type="radio" class="btn-check" name="btnradio" id="weakly" />
       <label class="btn btn-outline-primary" for="weakly">weakly</label>
-      <input type="radio" class="btn-check" name="btnradio" id="humaneval" />
-      <label class="btn btn-outline-primary" for="humaneval">humaneval</label>
-      <input type="radio" class="btn-check" name="btnradio" id="humaneval+" />
-      <label class="btn btn-outline-primary" for="humaneval+">humaneval+</label>
       <input type="radio" class="btn-check" name="btnradio" id="Average" />
       <label class="btn btn-outline-primary" for="Average">Average</label>
     </div>
@@ -143,6 +139,10 @@
         </ol>
       </div>
     </div>
+    <div id="notes">
+      <h3>🙏 Acknowledgements</h3>
+      <span>We thank the EvalPlus team for providing the leaderboard template.</span>
+    </div>
   </div>
 
   <script>
@@ -166,17 +166,6 @@
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "results.json", false); // false makes the request synchronous
     xhr.send();
-    /*
-    After calculating the average, the data should be like this:
-    data[Model]["pass@1"] = {
-      "humaneval": ...,
-      "mbpp": ...,
-      "humaneval+": ...,
-      "mbpp+": ...,
-      "average": ...,
-      "average+": ...,
-    }
-  */
     if (xhr.status === 200) {
       data = JSON.parse(xhr.responseText);
       Object.keys(data).forEach((key) => {
@@ -186,9 +175,7 @@
           data[key]["pass@1"]["Go"],
           data[key]["pass@1"]["TypeScript"],
           data[key]["pass@1"]["JavaScript"],
-          data[key]["pass@1"]["weakly"],
-          data[key]["pass@1"]["humaneval"],
-          data[key]["pass@1"]["humaneval+"]]
+          data[key]["pass@1"]["weakly"]]
         );
       });
       data = Object.keys(data).map((key) => {
@@ -315,7 +302,6 @@
 
     const theaders = ["Model", "pass@1"];
 
-    // score: 'average', 'humaneval', 'mbpp', 'humaneval+', 'mbpp+'
     const displayTable = (table, score) => {
       // filter out Null
       data = globalData
@@ -468,8 +454,6 @@
     const typeScriptRadio = document.getElementById("TypeScript");
     const javaScriptnRadio = document.getElementById("JavaScript");
     const weaklynRadio = document.getElementById("weakly");
-    const humanevalnRadio = document.getElementById("humaneval");
-    const humanevalpnRadio = document.getElementById("humaneval+");
 
     javaScriptnRadio.addEventListener("click", function () {
       clearTable();
@@ -483,20 +467,6 @@
       displayTable(plusedTable, "weakly");
       clearChart();
       displayChart("weakly");
-    });
-
-    humanevalnRadio.addEventListener("click", function () {
-      clearTable();
-      displayTable(plusedTable, "humaneval");
-      clearChart();
-      displayChart("humaneval");
-    });
-
-    humanevalpnRadio.addEventListener("click", function () {
-      clearTable();
-      displayTable(plusedTable, "humaneval+");
-      clearChart();
-      displayChart("humaneval+");
     });
 
     typeScriptRadio.addEventListener("click", function () {
