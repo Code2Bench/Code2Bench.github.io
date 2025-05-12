@@ -1,0 +1,226 @@
+{
+    "llama-4-scout": {
+        "link": "",
+        "pass@1": {
+            "Python": 31.1,
+            "Java": 25.4,
+            "Go": 6.2,
+            "TypeScript": 28.0,
+            "JavaScript": 25.4,
+            "weakly": 46.0,
+            "humaneval": 82.9,
+            "humaneval+": 76.2
+        },
+        "size": 109
+    },
+    "llama-4-maverick": {
+        "link": "",
+        "pass@1": {
+            "Python": 39.9,
+            "Java": 22.8,
+            "Go": 11.4,
+            "TypeScript": 30.6,
+            "JavaScript": 34.2,
+            "weakly": 55.6,
+            "humaneval": 88.4,
+            "humaneval+": 81.7
+        },
+        "size": 400
+    },
+    "Llama 3.3 70B": {
+        "link": "",
+        "pass@1": {
+            "Python": 37.3,
+            "Java": 20.2,
+            "Go": 15.5,
+            "TypeScript": 27.5,
+            "JavaScript": 27.5,
+            "weakly": 47.0,
+            "humaneval": 85.4,
+            "humaneval+": 79.9
+        },
+        "size": 70
+    },
+    "DeepSeek-V3": {
+        "link": "",
+        "pass@1": {
+            "Python": 39.3,
+            "Java": 25.9,
+            "Go": 23.8,
+            "TypeScript": 32.6,
+            "JavaScript": 34.2,
+            "weakly": 51.5,
+            "humaneval": 93.3,
+            "humaneval+": 88.4
+        },
+        "size": 671
+    },
+    "Mistral/mistral-small-3.1-24b-instruct": {
+        "link": "",
+        "pass@1": {
+            "Python": 32.1,
+            "Java": 22.7,
+            "Go": 13.0,
+            "TypeScript": 23.8,
+            "JavaScript": 30.6,
+            "weakly": 46.5,
+            "humaneval": 83.5,
+            "humaneval+": 79.3
+        },
+        "size": 24
+    },
+    "doubao-1-5-pro-32k-250115": {
+        "link": "",
+        "pass@1": {
+            "Python": 36.8,
+            "Java": 25.9,
+            "Go": 28.0,
+            "TypeScript": 35.2,
+            "JavaScript": 34.7,
+            "weakly": 53.0,
+            "humaneval": 92.7,
+            "humaneval+": 86.6
+        },
+        "size": 0
+    },
+    "qwen3-235b-a22b": {
+        "link": "",
+        "pass@1": {
+            "Python": 37.8,
+            "Java": 27.5,
+            "Go": 22.3,
+            "TypeScript": 33.2,
+            "JavaScript": 29.5,
+            "weakly": 51.5,
+            "humaneval": 89.6,
+            "humaneval+": 84.8
+        },
+        "size": 235
+    },
+    "qwen3-8b": {
+        "link": "",
+        "pass@1": {
+            "Python": 28.5,
+            "Java": 17.1,
+            "Go": 12.0,
+            "TypeScript": 21.2,
+            "JavaScript": 20.7,
+            "weakly": 37.9,
+            "humaneval": 84.1,
+            "humaneval+": 80.5
+        },
+        "size": 8
+    },
+    "qwen3-32b": {
+        "link": "",
+        "pass@1": {
+            "Python": 35.2,
+            "Java": 24.9,
+            "Go": 10.4,
+            "TypeScript": 30.1,
+            "JavaScript": 28.0,
+            "weakly": 46.0,
+            "humaneval": 90.2,
+            "humaneval+": 85.4
+        },
+        "size": 32
+    },
+    "Qwen2.5 Coder 32B Instruct": {
+        "link": "",
+        "pass@1": {
+            "Python": 36.2,
+            "Java": 24.4,
+            "Go": 17.1,
+            "TypeScript": 32.1,
+            "JavaScript": 34.2,
+            "weakly": 50.5,
+            "humaneval": 90.9,
+            "humaneval+": 87.8
+        },
+        "size": 32
+    },
+    "google/gemma-3-27b-it": {
+        "link": "",
+        "pass@1": {
+            "Python": 26.4,
+            "Java": 18.6,
+            "Go": 21.2,
+            "TypeScript": 26.9,
+            "JavaScript": 29.5,
+            "weakly": 39.4,
+            "humaneval": 86.0,
+            "humaneval+": 79.3
+        },
+        "size": 27
+    },
+    "claude-3.7-sonnet": {
+        "link": "",
+        "pass@1": {
+            "Python": 39.9,
+            "Java": 29.5,
+            "Go": 21.2,
+            "TypeScript": 35.2,
+            "JavaScript": 33.7,
+            "weakly": 49.5,
+            "humaneval": 91.5,
+            "humaneval+": 86.6
+        },
+        "size": 0
+    },
+    "qwen2.5-coder-14b-instruct": {
+        "link": "",
+        "pass@1": {
+            "Python": 31.6,
+            "Java": 22.8,
+            "Go": 16.6,
+            "TypeScript": 29.0,
+            "JavaScript": 29.5,
+            "weakly": 42.9,
+            "humaneval": 89.6,
+            "humaneval+": 84.8
+        },
+        "size": 14
+    },
+    "meta-llama/llama-3.2-3b-instruct": {
+        "link": "",
+        "pass@1": {
+            "Python": 16.1,
+            "Java": 6.7,
+            "Go": 3.1,
+            "TypeScript": 7.8,
+            "JavaScript": 9.3,
+            "weakly": 25.3,
+            "humaneval": 59.8,
+            "humaneval+": 54.9
+        },
+        "size": 3
+    },
+    "qwen3-1.7b": {
+        "link": "",
+        "pass@1": {
+            "Python": 14.5,
+            "Java": 8.3,
+            "Go": 2.0,
+            "TypeScript": 9.3,
+            "JavaScript": 8.7,
+            "weakly": 19.7,
+            "humaneval": 72.0,
+            "humaneval+": 67.1
+        },
+        "size": 1.7
+    },
+    "google/gemini-2.5-flash-preview": {
+        "link": "",
+        "pass@1": {
+            "Python": 39.9,
+            "Java": 28.5,
+            "Go": 27.5,
+            "TypeScript": 0.0,
+            "JavaScript": 35.2,
+            "weakly": 53.0,
+            "humaneval": 93.3,
+            "humaneval+": 86.6
+        },
+        "size": 0
+    }
+}
