@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects used by CODE2BENCH-2505</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Projects used by CODE2BENCH-2505</h1>
+  <table id="projects-table">
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Projects will be populated here -->
+    </tbody>
+  </table>
+
+  <script>
+    fetch('projects.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to load projects.json');
+        return response.json();
+      })
+      .then(projects => {
+        const tableBody = document.querySelector('#projects-table tbody');
+        projects.forEach(project => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${project.name}</td>
+            <td><a href="${project.url}" target="_blank">${project.url}</a></td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading project list:', error);
+      });
+  </script>
+</body>
+</html>
