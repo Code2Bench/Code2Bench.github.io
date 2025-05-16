@@ -7,7 +7,7 @@
             "Go": 6.2,
             "TypeScript": 28.0,
             "JavaScript": 25.4,
-            "weakly": 46.0,
+            "weakly": 42.9,
             "humaneval": 82.9,
             "humaneval+": 76.2
         },
@@ -16,12 +16,12 @@
     "llama-4-maverick": {
         "link": "",
         "pass@1": {
-            "Python": 39.9,
+            "Python": 39.4,
             "Java": 22.8,
             "Go": 11.4,
             "TypeScript": 30.6,
             "JavaScript": 34.2,
-            "weakly": 55.6,
+            "weakly": 53.5,
             "humaneval": 88.4,
             "humaneval+": 81.7
         },
@@ -31,11 +31,11 @@
         "link": "",
         "pass@1": {
             "Python": 37.3,
-            "Java": 20.2,
+            "Java": 24.4,
             "Go": 15.5,
             "TypeScript": 27.5,
             "JavaScript": 27.5,
-            "weakly": 47.0,
+            "weakly": 45.6,
             "humaneval": 85.4,
             "humaneval+": 79.9
         },
@@ -49,21 +49,21 @@
             "Go": 23.8,
             "TypeScript": 32.6,
             "JavaScript": 34.2,
-            "weakly": 51.5,
+            "weakly": 50.5,
             "humaneval": 93.3,
             "humaneval+": 88.4
         },
         "size": 671
     },
-    "Mistral/mistral-small-3.1-24b-instruct": {
+    "mistral-small-3.1-24b-instruct": {
         "link": "",
         "pass@1": {
-            "Python": 32.1,
+            "Python": 31.6,
             "Java": 22.7,
             "Go": 13.0,
             "TypeScript": 23.8,
             "JavaScript": 30.6,
-            "weakly": 46.5,
+            "weakly": 44.4,
             "humaneval": 83.5,
             "humaneval+": 79.3
         },
@@ -91,7 +91,7 @@
             "Go": 22.3,
             "TypeScript": 33.2,
             "JavaScript": 29.5,
-            "weakly": 51.5,
+            "weakly": 50.0,
             "humaneval": 89.6,
             "humaneval+": 84.8
         },
@@ -105,7 +105,7 @@
             "Go": 12.0,
             "TypeScript": 21.2,
             "JavaScript": 20.7,
-            "weakly": 37.9,
+            "weakly": 39.9,
             "humaneval": 84.1,
             "humaneval+": 80.5
         },
@@ -119,7 +119,7 @@
             "Go": 10.4,
             "TypeScript": 30.1,
             "JavaScript": 28.0,
-            "weakly": 46.0,
+            "weakly": 45.5,
             "humaneval": 90.2,
             "humaneval+": 85.4
         },
@@ -133,21 +133,21 @@
             "Go": 17.1,
             "TypeScript": 32.1,
             "JavaScript": 34.2,
-            "weakly": 50.5,
+            "weakly": 44.4,
             "humaneval": 90.9,
             "humaneval+": 87.8
         },
         "size": 32
     },
-    "google/gemma-3-27b-it": {
+    "gemma-3-27b-it": {
         "link": "",
         "pass@1": {
-            "Python": 26.4,
-            "Java": 18.6,
+            "Python": 34.2,
+            "Java": 22.8,
             "Go": 21.2,
-            "TypeScript": 26.9,
+            "TypeScript": 28.5,
             "JavaScript": 29.5,
-            "weakly": 39.4,
+            "weakly": 46.0,
             "humaneval": 86.0,
             "humaneval+": 79.3
         },
@@ -173,23 +173,23 @@
             "Python": 31.6,
             "Java": 22.8,
             "Go": 16.6,
-            "TypeScript": 29.0,
+            "TypeScript": 29.5,
             "JavaScript": 29.5,
-            "weakly": 42.9,
+            "weakly": 43.4,
             "humaneval": 89.6,
             "humaneval+": 84.8
         },
         "size": 14
     },
-    "meta-llama/llama-3.2-3b-instruct": {
+    "llama-3.2-3b-instruct": {
         "link": "",
         "pass@1": {
-            "Python": 16.1,
+            "Python": 18.1,
             "Java": 6.7,
             "Go": 3.1,
             "TypeScript": 7.8,
             "JavaScript": 9.3,
-            "weakly": 25.3,
+            "weakly": 23.2,
             "humaneval": 59.8,
             "humaneval+": 54.9
         },
@@ -199,17 +199,17 @@
         "link": "",
         "pass@1": {
             "Python": 14.5,
-            "Java": 8.3,
-            "Go": 2.0,
+            "Java": 9.3,
+            "Go": 1.6,
             "TypeScript": 9.3,
-            "JavaScript": 8.7,
-            "weakly": 19.7,
+            "JavaScript": 10.4,
+            "weakly": 20.2,
             "humaneval": 72.0,
             "humaneval+": 67.1
         },
         "size": 1.7
     },
-    "google/gemini-2.5-flash-preview": {
+    "gemini-2.5-flash-preview": {
         "link": "",
         "pass@1": {
             "Python": 39.9,
